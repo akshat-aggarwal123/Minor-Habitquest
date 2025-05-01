@@ -1,0 +1,94 @@
+.background {
+    background-image: url('../public/moon.jpg');
+    background-size: 90%;
+    background-position: -350% 30%;
+    /* background-position: right; */
+
+}
+body {
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%, rgba(1,0,5,1) 100%);
+}
+
+.gradient{
+    background-color: #130f40;
+background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+}
+.gradient1{
+    background-color: #2b4162;
+background-image: linear-gradient(320deg, #2b4162 0%, #12100e 34%);
+}
+
+.done{
+    color: rgb(25, 204, 55);
+}
+.fail{
+    color:rgb(235, 14, 14);
+}
+.day-headings{
+    color: #049cbe;
+}
+.text-light {
+    font-family: monospace, 'Montserrat', sans-serif;
+    font-size: larger;
+    
+  }
+
+  /* Existing CSS ... */
+
+/* Profile Glow Animation */
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff;
+    }
+    50% {
+      box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+    }
+    100% {
+      box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff;
+    }
+  }
+  
+  .profile-glow {
+    animation: glow 2s infinite alternate;
+  }
+  
+  /* Dropdown Styling */
+  .profile-dropdown-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #2b4162;
+  }
+  
+  .profile-dropdown-habits {
+    font-size: 14px;
+    font-family: 'monospace', sans-serif;
+  }
+  .profile-background {
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  .profile-card {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00ffff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00ffff;
+    backdrop-filter: blur(10px);
+  }
+  
+  .habit-item {
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+  
+  .habit-item:hover {
+    transform: scale(1.02); /* Slight zoom */
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2); /* Very soft glow */
+  }
+  
